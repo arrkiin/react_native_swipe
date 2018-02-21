@@ -92,7 +92,10 @@ class Deck extends Component {
             return (
                 <Animated.View
                     key={item.id}
-                    style={[styles.cardStyle, { zIndex: -idx }]}
+                    style={[
+                        styles.cardStyle,
+                        { zIndex: -idx, top: 10 * (idx - this.state.index) },
+                    ]}
                 >
                     {this.props.renderCard(item)}
                 </Animated.View>

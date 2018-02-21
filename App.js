@@ -118,11 +118,13 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
+        borderColor: 'red',
     },
     cardContainer: {
         elevation: 5,
         borderWidth: 0,
         padding: 0,
+        marginBottom: 10,
     },
     cardWrapper: {
         padding: 0,
